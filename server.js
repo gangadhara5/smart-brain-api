@@ -13,7 +13,6 @@ const db = knex({
 });
 
 const app = express();
-const saltRounds = 10;
 
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));

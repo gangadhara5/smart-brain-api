@@ -1,5 +1,7 @@
 import bcrypt from "bcrypt";
 
+const saltRounds = 10;
+
 const signIn = (req, res, db) => {
   const { email, password } = req.body;
   db.select("email", "password")
